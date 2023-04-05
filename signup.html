@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            background-image: url('image2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .tponav{
+            background-color: #6d0000;
+            overflow: hidden;
+        }
+        .topnav a{
+            float:left;
+
+            color: #e40361;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+            .topnav a:hover{
+                color: red;
+                border-radius: 15px;
+                box-shadow: 0 0 10px rgb(0, 0, 0);
+                text-decoration: underline;
+            }
+        
+        .container {
+            color:rgb(36, 26, 179);
+            margin:50px;
+            padding:40px;
+            width:250px ;
+            height:fit-content;
+            border-radius: 30px;
+            border: 1px solid rgb(49, 47, 47);
+            box-shadow: 1px 1px 5px rgba(230, 230, 240, 0.966);           
+    }    
+    input[type=text],input[type=number],input[type=tel],input[type=email],input[type=password]{
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(56, 27, 201);
+        margin: 10px;
+        border-radius: 5px;  
+        padding:10px 20px;  
+        background-color: transparent;
+        
+        
+    }
+    button{
+        color: rgb(0, 0, 0);
+        margin: 20px;
+        padding: 8px;
+        border: 1px solid green;
+        border-radius: 10px;
+        width: 50%;
+        background-color: transparent;
+    }
+    button:hover{
+        background-color: green;
+        border: 1px solid white;
+        box-shadow: 0 0 20px rgba(204, 138, 52, 0.822);
+    }
+    input:hover{
+        border: 1px solid rgb(138, 36, 36);
+        box-shadow: 0 0 20px rgba(27, 27, 26, 0.822);
+    }
+    .container:hover{
+        box-shadow: 1px 1px 60px rgba(9, 10, 10, 0.822);
+    }
+    h1{
+        text-align: center;
+        border: transparent;
+        border-radius: 10px;
+        box-shadow: 0 0 10px;
+    }
+    form:hover{
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgb(242, 241, 247);
+    }
+               
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="login.html">Login</a>
+        <a href="signin.html">Sign in</a>
+        <a href="about.html">About Us</a>
+        <a href="index.html">Home</a>        
+    </div>
+    <div class="container">
+        
+        <h1>Sign up here</h1>
+        <form >
+            <div class="input">
+                <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter your name" name="name" required>
+
+                <label for="age">Age</label>
+                <input type="number" placeholder="enter your age" name="" required>
+               
+                <label for="number">Mobile</label>
+                <input type="tel" placeholder="Enter  mobile number" maxlength="10" name="" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter your Email" name="email" required>
+            
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter passward" name="password" maxlength="8" required>
+
+                            
+            </div>
+                
+                    
+                    <button type="submit">Sign in</button>
+        </form>
+    </div>
+</body>
+</html>
